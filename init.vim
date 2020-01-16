@@ -3,7 +3,7 @@
 call plug#begin(stdpath('data') . '/plugged')
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'davidhalter/jedi-vim'
+Plug 'deoplete-plugins/deoplete-jedi'
 
 Plug 'sheerun/vim-polyglot'  " It has a lot of syntax handling
 Plug 'Yggdroot/indentLine'  " Show ident blocks as lines
@@ -43,6 +43,12 @@ let g:airline_powerline_fonts = 1
 
 " Enable Tab Bar line for airline
 let g:airline#extensions#tabline#enabled = 1
+
+" Enable Deoplete support
+let g:deoplete#sources#jedi#enable_typeinfo = 0
+
+let g:deoplete#enable_at_startup = 1
+
 "
 "
 " GENERAL CONFIGS
