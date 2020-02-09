@@ -18,6 +18,8 @@ Plug 'scrooloose/nerdcommenter'
 " Color Schemes
 Plug 'crusoexia/vim-monokai'
 Plug 'jacoborus/tender.vim'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'jnurmine/Zenburn'
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'wakatime/vim-wakatime'
@@ -31,7 +33,6 @@ call plug#end()
 "
 " General Setup
 "
-
 " Tabs to spaces
 command Tabs2Spaces execute ':1,$s/\t/  /g'
 
@@ -106,4 +107,10 @@ set mouse=a
 
 " Theme
 syntax on
-colorscheme monokai
+"colorscheme monokai
+
+"set background=light
+"colorscheme PaperColor
+
+colorscheme zenburn
+
