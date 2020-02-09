@@ -22,7 +22,7 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'jnurmine/Zenburn'
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'wakatime/vim-wakatime'
+" Plug 'wakatime/vim-wakatime'
 Plug 'tpope/vim-fugitive'
 
 Plug 'vim-airline/vim-airline'
