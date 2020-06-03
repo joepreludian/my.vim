@@ -28,6 +28,12 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" Go Support
+Plug 'fatih/vim-go'
+
+" Rust Support
+Plug 'rust-lang/rust.vim'
+
 call plug#end()
 
 "
@@ -47,7 +53,6 @@ let g:airline#extensions#tabline#enabled = 1
 
 " Enable Deoplete support
 let g:deoplete#sources#jedi#enable_typeinfo = 0
-
 let g:deoplete#enable_at_startup = 1
 
 "
@@ -64,7 +69,7 @@ let mapleader = ","
 
 noremap <leader>. :NERDTreeToggle<CR>
 
-" Undo leves
+" Undo levels
 set history=300
 set undolevels=300
 
@@ -104,6 +109,11 @@ vnoremap > >gv
 
 " Adding mouse support into vim
 set mouse=a
+
+" Jedi vim specific configs
+let g:jedi#auto_initialization = 1
+let g:jedi#auto_vim_configuration = 1
+
 
 " Theme
 syntax on
