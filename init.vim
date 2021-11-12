@@ -1,5 +1,13 @@
 " Jon's Neovim configurations
 
+" If you're using python3 that came from pyenv, set this variable
+" Also run
+"     $ pyenv install 3.10.0 --verbose
+"     $ pip install --upgrade pip
+"     $ pip install pynvim
+"
+let g:python3_host_prog = expand('~/.pyenv/shims/python')
+
 call plug#begin(stdpath('data') . '/plugged')
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
